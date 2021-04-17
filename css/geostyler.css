@@ -16,6 +16,11 @@ h1 {
     text-align: center;
 }
 
+h3 {
+    padding-bottom: 20px;
+    color: black;
+}
+
 #logo {
     font-family: 'Staatliches', cursive;
     font-size: 50px;
@@ -29,7 +34,7 @@ h1 {
     font-size: 27px;
     font-weight: 900;
     letter-spacing: 1px;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 
 p {
@@ -40,13 +45,24 @@ p {
 }
 
 #questions {
+    padding-top: 20px;
     text-align: center;
-    position: relative;
-    bottom: 10px;
 }
 
-input {
-    -webkit-appearance: none;
+.btn-secondary {
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-secondary:hover {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+.btn-check:active+.btn-secondary, .btn-check:checked+.btn-secondary, .btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #ff0000;
+    box-shadow: none;
 }
 
 label {
@@ -55,17 +71,13 @@ label {
     border-radius: 4px;
     display: block;
     margin-bottom: 20px;
-    height: 53px;
     width: 220px;
     font-size: 25px;
     padding-top: 5px;
     cursor: pointer;
 }
 
-input:checked + label {
-    background-color: rgb(255, 62, 62);
-    border-color: rgb(255, 62, 62);
-}
+
 
 .main {
     width: 100%;
