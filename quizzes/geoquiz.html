@@ -89,6 +89,7 @@
     </div>
 </body>
 <script>
+    //WARNING: MESSY CODE BELOW!
     //This was the first code ever written for Quizzie, so it is really messy. The rest of the quizzes use jQuery, and their code is a lot cleaner.
     document.getElementById("corrector").style.display = "none";
     function geoOpen(link) {
@@ -131,17 +132,17 @@
         questionTwoA.innerHTML = "<input type='radio' name='cap' id='hartford' class='btn-check'><label for='hartford' class='btn btn-secondary'>Hartford</label>";
         questionThreeA.innerHTML = "<input type='radio' name='cap' id='stamford' class='btn-check'><label for='stamford' class='btn btn-secondary'>Stamford</label>";
         questionFourA.innerHTML = "<input type='radio' name='cap' id='greenwich' class='btn-check'><label for='greenwich' class='btn btn-secondary'>Greenwich</label>";
-      } else if (percentOne > 25 && percentOne < 50) {
+      } else if (percentOne > 25 && percentOne <= 50) {
         questionOneA.innerHTML = "<input type='radio' name='cap' id='greenwich' class='btn-check'><label for='greenwich' class='btn btn-secondary'>Greenwich</label>";
         questionTwoA.innerHTML = "<input type='radio' name='cap' id='new-haven' class='btn-check'><label for='new-haven' class='btn btn-secondary'>New Haven</label>";
         questionThreeA.innerHTML = "<input type='radio' name='cap' id='hartford' class='btn-check'><label for='hartford' class='btn btn-secondary'>Hartford</label>";
         questionFourA.innerHTML = "<input type='radio' name='cap' id='stamford' class='btn-check'><label for='stamford' class='btn btn-secondary'>Stamford</label>";
-      } else if (percentOne > 50 && percentOne < 75) {
+      } else if (percentOne > 50 && percentOne <= 75) {
         questionOneA.innerHTML = "<input type='radio' name='cap' id='stamford' class='btn-check'><label for='stamford' class='btn btn-secondary'>Stamford</label>";
         questionTwoA.innerHTML = "<input type='radio' name='cap' id='greenwich' class='btn-check'><label for='greenwich' class='btn btn-secondary'>Greenwich</label>";
         questionThreeA.innerHTML = "<input type='radio' name='cap' id='new-haven' class='btn-check'><label for='new-haven' class='btn btn-secondary'>New Haven</label>";
         questionFourA.innerHTML = "<input type='radio' name='cap' id='hartford' class='btn-check'><label for='hartford' class='btn btn-secondary'>Hartford</label>";
-      } else if (percentOne > 75 && percentOne < 100) {
+      } else if (percentOne > 75 && percentOne <= 100) {
         questionOneA.innerHTML = "<input type='radio' name='cap' id='hartford' class='btn-check'><label for='hartford' class='btn btn-secondary'>Hartford</label>";
         questionTwoA.innerHTML = "<input type='radio' name='cap' id='stamford' class='btn-check'><label for='stamford' class='btn btn-secondary'>Stamford</label>";
         questionThreeA.innerHTML = "<input type='radio' name='cap' id='greenwich' class='btn-check'><label for='greenwich' class='btn btn-secondary'>Greenwich</label>";
