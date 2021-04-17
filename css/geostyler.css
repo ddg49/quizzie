@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+body {
+    background: rgb(66,58,180);
+    background: linear-gradient(90deg, rgba(66,58,180,1) 0%, rgba(179,29,253,1) 68%);
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+h1 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#logo {
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    cursor: pointer;
+    color: aqua;
+}
+
+.row.header p {
+    text-align: center;
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 27px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding-bottom: 45px;
+}
+
+p {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    overflow-wrap: break-word;
+}
+
+#questions {
+    text-align: center;
+    position: relative;
+    bottom: 10px;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+label {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    height: 53px;
+    width: 220px;
+    font-size: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+input:checked + label {
+    background-color: rgb(255, 62, 62);
+    border-color: rgb(255, 62, 62);
+}
+
+.main {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    height: 30px;
+    width: 110px;
+    background-color: sandybrown;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: rgb(255, 62, 62);
+}
+
+#score {
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+}
+
+#ratio {
+    font-family: 'Staatliches', cursive;
+    color: red;
+    font-size: 40px;
+}
+
+#corrector {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#page {
+    text-align: left;
+}
+
+.bottom {
+    padding-bottom: 20px;
+}
+
+div {
+    text-align: center;
+}
