@@ -28,6 +28,7 @@ h1 {
 }
 
 .row.header p {
+    color: black;
     text-align: center;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 27px;
