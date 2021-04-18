@@ -179,7 +179,15 @@ function scienceSubmit() {
         reloadButton.innerHTML = "<button onclick='reloadFunc()'>Retry</button>";
         document.getElementById("corrector").appendChild(reloadButton);
 
-        $('html,body').scrollTop(0);
+
+        const mediaQuery = window.matchMedia('(max-width: 768px)')
+        // 
+        if (mediaQuery.matches) {
+            $('html,body').scrollTop(0);
+        } else {
+        $('html, body').animate({ scrollTop: 0 }, 1500);
+        }
+
     }
 
 }
