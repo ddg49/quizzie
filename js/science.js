@@ -90,6 +90,14 @@ if (percent <= 25) {
     $("#q-4c").html("<input type='radio' class='btn-check' name='oldage' id='fourfive' autocomplete='off'><label class='btn btn-secondary' for='fourfive'>≈ 4.5 billion years old</label>")
 }
 
+if (percent <= 50) {
+    $("#q-1d").html("<input type='radio' class='btn-check' name='position' id='above' autocomplete='off'><label class='btn btn-secondary' for='above'>Above</label>")
+    $("#q-2d").html("<input type='radio' class='btn-check' name='position' id='below' autocomplete='off'><label class='btn btn-secondary' for='below'>Below</label>")
+} else if (percent > 50 && percent <= 100) {
+    $("#q-1d").html("<input type='radio' class='btn-check' name='position' id='below' autocomplete='off'><label class='btn btn-secondary' for='below'>Below</label>")
+    $("#q-2d").html("<input type='radio' class='btn-check' name='position' id='above' autocomplete='off'><label class='btn btn-secondary' for='above'>Above</label>")
+}
+
 
 let points = 0;
 function scienceSubmit() {
@@ -121,6 +129,12 @@ function scienceSubmit() {
             points++;
             $("#ans4").html("≈ 4.5 billion years old")
             $("#ans4").css("color", "lightgreen")
+        }
+        //Question 5
+        if(document.getElementById("below").checked === true) {
+            points++;
+            $("#ans5").html("Below")
+            $("#ans5").css("color", "lightgreen")
         }
 
         //INCORRECT ANSWERS
@@ -168,19 +182,27 @@ function scienceSubmit() {
             $("#ans4").html("≈ 4 million years old")
             $("#ans4").css("color", "red")
         }
+        //Question 5
+        if (document.getElementById("above").checked === true) {
+            $("#ans5").html("Above")
+            $("#ans5").css("color", "red")
+        } 
 
         document.getElementById("points").innerHTML = points;
-        document.getElementById("ratio").innerHTML = ((points / 5) * 100).toFixed(1) + " %"
+        document.getElementById("ratio").innerHTML = ((points / 5) * 100).toFixed(1) + " %";
         document.querySelector("main").style.display = "none";
         document.getElementById("corrector").style.display = "block";
+
+        if (points >= 4) {
+            $("#ratio").css("color", "lightgreen");
+        }
 
         points = 0;
         var reloadButton = document.createElement("div");
         reloadButton.innerHTML = "<button onclick='reloadFunc()'>Retry</button>";
         document.getElementById("corrector").appendChild(reloadButton);
 
-
-        const mediaQuery = window.matchMedia('(max-width: 768px)')
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
         // 
         if (mediaQuery.matches) {
             $('html,body').scrollTop(0);

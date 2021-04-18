@@ -343,7 +343,10 @@
         document.getElementById("ratio").innerHTML = ((points / 5) * 100).toFixed(1) + " %"
         document.querySelector("main").style.display = "none";
         document.getElementById("corrector").style.display = "block";
-
+        
+        if (points >= 4) {
+            $("#ratio").css("color", "lightgreen");
+        }
 
         points = 0;
         var reloadButton = document.createElement("div");
