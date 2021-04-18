@@ -179,6 +179,7 @@ function scienceSubmit() {
         reloadButton.innerHTML = "<button onclick='reloadFunc()'>Retry</button>";
         document.getElementById("corrector").appendChild(reloadButton);
 
+        $('html,body').scrollTop(0);
     }
 
 }
