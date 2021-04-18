@@ -1,3 +1,5 @@
+document.getElementById("corrector").style.display = "none";
+
 let percent = Math.floor(Math.random() * 101); 
 // randomize each question:
 if (percent <= 25) {
@@ -44,21 +46,143 @@ if (percent <= 25) {
     $("#q-4a").html("<input type='radio' class='btn-check' name='planet' id='mercury' autocomplete='off'><label class='btn btn-secondary' for='mercury'>Mercury</label>")
 }
 
-let points = 0;
+if (percent <= 25) {
+    $("#q-1b").html("<input type='radio' class='btn-check' name='dist' id='ninetwo' autocomplete='off'><label class='btn btn-secondary' for='ninetwo'>92,955,807 miles</label>")
+    $("#q-2b").html("<input type='radio' class='btn-check' name='dist' id='hundred' autocomplete='off'><label class='btn btn-secondary' for='hundred'>149,597,870 miles</label>")
+    $("#q-3b").html("<input type='radio' class='btn-check' name='dist' id='ninenine' autocomplete='off'><label class='btn btn-secondary' for='ninenine'>996,928,440 miles</label>")
+    $("#q-4b").html("<input type='radio' class='btn-check' name='dist' id='threetho' autocomplete='off'><label class='btn btn-secondary' for='threetho'>30,688,950 miles</label>")
+} else if (percent > 25 && percent <= 50) {
+    $("#q-1b").html("<input type='radio' class='btn-check' name='dist' id='threetho' autocomplete='off'><label class='btn btn-secondary' for='threetho'>30,688,950 miles</label>")
+    $("#q-2b").html("<input type='radio' class='btn-check' name='dist' id='ninetwo' autocomplete='off'><label class='btn btn-secondary' for='ninetwo'>92,955,807 miles</label>")
+    $("#q-3b").html("<input type='radio' class='btn-check' name='dist' id='hundred' autocomplete='off'><label class='btn btn-secondary' for='hundred'>149,597,870 miles</label>")
+    $("#q-4b").html("<input type='radio' class='btn-check' name='dist' id='ninenine' autocomplete='off'><label class='btn btn-secondary' for='ninenine'>996,928,440 miles</label>")
+} else if (percent > 50 && percent <= 75) {
+    $("#q-1b").html("<input type='radio' class='btn-check' name='dist' id='ninenine' autocomplete='off'><label class='btn btn-secondary' for='ninenine'>996,928,440 miles</label>")
+    $("#q-2b").html("<input type='radio' class='btn-check' name='dist' id='threetho' autocomplete='off'><label class='btn btn-secondary' for='threetho'>30,688,950 miles</label>")
+    $("#q-3b").html("<input type='radio' class='btn-check' name='dist' id='ninetwo' autocomplete='off'><label class='btn btn-secondary' for='ninetwo'>92,955,807 miles</label>")
+    $("#q-4b").html("<input type='radio' class='btn-check' name='dist' id='hundred' autocomplete='off'><label class='btn btn-secondary' for='hundred'>149,597,870 miles</label>")
+} else if (percent > 75 && percent <= 100) {
+    $("#q-1b").html("<input type='radio' class='btn-check' name='dist' id='hundred' autocomplete='off'><label class='btn btn-secondary' for='hundred'>149,597,870 miles</label>")
+    $("#q-2b").html("<input type='radio' class='btn-check' name='dist' id='ninenine' autocomplete='off'><label class='btn btn-secondary' for='ninenine'>996,928,440 miles</label>")
+    $("#q-3b").html("<input type='radio' class='btn-check' name='dist' id='threetho' autocomplete='off'><label class='btn btn-secondary' for='threetho'>30,688,950 miles</label>")
+    $("#q-4b").html("<input type='radio' class='btn-check' name='dist' id='ninetwo' autocomplete='off'><label class='btn btn-secondary' for='ninetwo'>92,955,807 miles</label>")
+}
 
+if (percent <= 25) {
+    $("#q-1c").html("<input type='radio' class='btn-check' name='oldage' id='fourfive' autocomplete='off'><label class='btn btn-secondary' for='fourfive'>≈ 4.5 billion years old</label>")
+    $("#q-2c").html("<input type='radio' class='btn-check' name='oldage' id='justfour' autocomplete='off'><label class='btn btn-secondary' for='justfour'>≈ 4 billion years old</label>")
+    $("#q-3c").html("<input type='radio' class='btn-check' name='oldage' id='fourfivemil' autocomplete='off'><label class='btn btn-secondary' for='fourfivemil'>≈ 4.5 million years old</label>")
+    $("#q-4c").html("<input type='radio' class='btn-check' name='oldage' id='justfourmil' autocomplete='off'><label class='btn btn-secondary' for='justfourmil'>≈ 4 million years old</label>")
+} else if (percent > 25 && percent <= 50) {
+    $("#q-1c").html("<input type='radio' class='btn-check' name='oldage' id='justfourmil' autocomplete='off'><label class='btn btn-secondary' for='justfourmil'>≈ 4 million years old</label>")
+    $("#q-2c").html("<input type='radio' class='btn-check' name='oldage' id='fourfive' autocomplete='off'><label class='btn btn-secondary' for='fourfive'>≈ 4.5 billion years old</label>")
+    $("#q-3c").html("<input type='radio' class='btn-check' name='oldage' id='justfour' autocomplete='off'><label class='btn btn-secondary' for='justfour'>≈ 4 billion years old</label>")
+    $("#q-4c").html("<input type='radio' class='btn-check' name='oldage' id='fourfivemil' autocomplete='off'><label class='btn btn-secondary' for='fourfivemil'>≈ 4.5 million years old</label>")
+} else if (percent > 50 && percent <= 75) {
+    $("#q-1c").html("<input type='radio' class='btn-check' name='oldage' id='fourfivemil' autocomplete='off'><label class='btn btn-secondary' for='fourfivemil'>≈ 4.5 million years old</label>")
+    $("#q-2c").html("<input type='radio' class='btn-check' name='oldage' id='justfourmil' autocomplete='off'><label class='btn btn-secondary' for='justfourmil'>≈ 4 million years old</label>")
+    $("#q-3c").html("<input type='radio' class='btn-check' name='oldage' id='fourfive' autocomplete='off'><label class='btn btn-secondary' for='fourfive'>≈ 4.5 billion years old</label>")
+    $("#q-4c").html("<input type='radio' class='btn-check' name='oldage' id='justfour' autocomplete='off'><label class='btn btn-secondary' for='justfour'>≈ 4 billion years old</label>")
+} else if (percent > 75 && percent <= 100) {
+    $("#q-1c").html("<input type='radio' class='btn-check' name='oldage' id='justfour' autocomplete='off'><label class='btn btn-secondary' for='justfour'>≈ 4 billion years old</label>")
+    $("#q-2c").html("<input type='radio' class='btn-check' name='oldage' id='fourfivemil' autocomplete='off'><label class='btn btn-secondary' for='fourfivemil'>≈ 4.5 million years old</label>")
+    $("#q-3c").html("<input type='radio' class='btn-check' name='oldage' id='justfourmil' autocomplete='off'><label class='btn btn-secondary' for='justfourmil'>≈ 4 million years old</label>")
+    $("#q-4c").html("<input type='radio' class='btn-check' name='oldage' id='fourfive' autocomplete='off'><label class='btn btn-secondary' for='fourfive'>≈ 4.5 billion years old</label>")
+}
+
+
+let points = 0;
 function scienceSubmit() {
     
-    if (document.getElementById("hydrogen").checked === false && document.getElementById("helium").checked === false && document.getElementById("hydrochloride").checked === false && document.getElementById("hydroxide").checked === false || document.getElementById("venus").checked === false && document.getElementById("saturn").checked === false && document.getElementById("mars").checked === false && document.getElementById("mercury").checked === false) {
+    if (document.getElementById("hydrogen").checked === false && document.getElementById("helium").checked === false && document.getElementById("hydrochloride").checked === false && document.getElementById("hydroxide").checked === false || document.getElementById("venus").checked === false && document.getElementById("saturn").checked === false && document.getElementById("mars").checked === false && document.getElementById("mercury").checked === false || document.getElementById("ninenine").checked === false && document.getElementById("threetho").checked === false && document.getElementById("ninetwo").checked === false && document.getElementById("hundred").checked === false ) {
         alert("You must answer every question in order to submit!");
     } else {
+        //CORRECT ANSWERS
+        //Question 1
         if (document.getElementById("hydrogen").checked === true) {
-            points++
+            points++;
+            $("#ans1").html("Hydrogen")
+            $("#ans1").css("color", "lightgreen")
         }
+        //Question 2
         if (document.getElementById("venus").checked === true) {
-            points++
+            points++;
+            $("#ans2").html("Venus")
+            $("#ans2").css("color", "lightgreen")
         }
-        console.log(points)
+        //Question 3
+        if(document.getElementById("ninetwo").checked === true) {
+            points++;
+            $("#ans3").html("92,955,807 miles")
+            $("#ans3").css("color", "lightgreen")
+        }
+        //Question 4
+        if(document.getElementById("fourfive").checked === true) {
+            points++;
+            $("#ans4").html("≈ 4.5 billion years old")
+            $("#ans4").css("color", "lightgreen")
+        }
+
+        //INCORRECT ANSWERS
+        //Question 1
+        if (document.getElementById("hydrochloride").checked === true) {
+            $("#ans1").html("Hydrochloride")
+            $("#ans1").css("color", "red")
+        } else if (document.getElementById("hydroxide").checked === true) {
+            $("#ans1").html("Hydroxide")
+            $("#ans1").css("color", "red")
+        } else if (document.getElementById("helium").checked === true) {
+            $("#ans1").html("Helium")
+            $("#ans1").css("color", "red")
+        }
+        //Question 2
+        if (document.getElementById("mercury").checked === true) {
+            $("#ans2").html("Mercury")
+            $("#ans2").css("color", "red")
+        } else if (document.getElementById("saturn").checked === true) {
+            $("#ans2").html("Saturn")
+            $("#ans2").css("color", "red")
+        } else if (document.getElementById("mars").checked === true) {
+            $("#ans2").html("Mars")
+            $("#ans2").css("color", "red")
+        }
+        //Question 3
+        if (document.getElementById("hundred").checked === true) {
+            $("#ans3").html("149,597,870 miles")
+            $("#ans3").css("color", "red")
+        } else if (document.getElementById("ninenine").checked === true) {
+            $("#ans3").html("996,928,440 miles")
+            $("#ans3").css("color", "red")
+        } else if (document.getElementById("threetho").checked === true) {
+            $("#ans3").html("30,688,950 miles")
+            $("#ans3").css("color", "red")
+        }
+        //Question 4
+        if (document.getElementById("justfour").checked === true) {
+            $("#ans4").html("≈ 4 billion years old")
+            $("#ans4").css("color", "red")
+        } else if (document.getElementById("fourfivemil").checked === true) {
+            $("#ans4").html("≈ 4.5 million years old")
+            $("#ans4").css("color", "red")
+        } else if (document.getElementById("justfourmil").checked === true) {
+            $("#ans4").html("≈ 4 million years old")
+            $("#ans4").css("color", "red")
+        }
+
+        document.getElementById("points").innerHTML = points;
+        document.getElementById("ratio").innerHTML = ((points / 5) * 100).toFixed(1) + " %"
+        document.querySelector("main").style.display = "none";
+        document.getElementById("corrector").style.display = "block";
+
+        points = 0;
+        var reloadButton = document.createElement("div");
+        reloadButton.innerHTML = "<button onclick='reloadFunc()'>Retry</button>";
+        document.getElementById("corrector").appendChild(reloadButton);
+
     }
 
 }
 
+function reloadFunc() {
+    location.reload();
+  }

@@ -104,3 +104,27 @@ button {
 button:hover {
     background-color: rgb(255, 62, 62);
 }
+
+#score {
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+}
+
+#ratio {
+    font-family: 'Staatliches', cursive;
+    color: red;
+    font-size: 40px;
+}
+
+#corrector {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#page {
+    text-align: left;
+}
+
+.bottom {
+    padding-bottom: 20px;
+}

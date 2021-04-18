@@ -23,27 +23,65 @@
             <p>Test your knowledge!</p>
         </div>
     </div>
+
     <div class="container-fluid">
         <div class="row main">
             <h3>Science</h3>
-            <p>What is the chemical element with the symbol H on the periodic table?</p>
-            <section id="questions">
-                <div id="q-1"></div>
-                <div id="q-2"></div>
-                <div id="q-3"></div>
-                <div id="q-4"></div>
-            </section>
-            
-            <p>What is the hottest planet in the solar system?</p>
-            <section id="questions">
-                <div id="q-1a"></div>
-                <div id="q-2a"></div>
-                <div id="q-3a"></div>
-                <div id="q-4a"></div>
-            </section>
-            <section id="btn">
-            <button onclick="scienceSubmit()">Submit</button>
-            </section>
+            <main>
+                <p>What is the chemical element with the symbol H on the periodic table?</p>
+                <section id="questions">
+                    <div id="q-1"></div>
+                    <div id="q-2"></div>
+                    <div id="q-3"></div>
+                    <div id="q-4"></div>
+                </section>
+                
+                <p>What is the hottest planet in the solar system?</p>
+                <section id="questions">
+                    <div id="q-1a"></div>
+                    <div id="q-2a"></div>
+                    <div id="q-3a"></div>
+                    <div id="q-4a"></div>
+                </section>
+
+                <p>How far away is the sun from Earth?</p>
+                <section id="questions">
+                    <div id="q-1b"></div>
+                    <div id="q-2b"></div>
+                    <div id="q-3b"></div>
+                    <div id="q-4b"></div>
+                </section>
+
+                <p>How old is planet Earth?</p>
+                <section id="questions">
+                    <div id="q-1c"></div>
+                    <div id="q-2c"></div>
+                    <div id="q-3c"></div>
+                    <div id="q-4c"></div>
+                </section>
+
+                <section id="btn">
+                <button onclick="scienceSubmit()">Submit</button>
+                </section>
+            </main>
+
+            <div id="corrector">
+                <p id="score">Total Score:&nbsp; <span id=points></span>/5</p>
+                <div id="ratio"></div>
+                <br><br>
+                
+                <p id="page">1. Your Answer: <span id=ans1></span></p>
+                <p id="page" class="bottom">1. Correct Answer: Hydrogen</p> 
+                <p id="page">2. Your Answer: <span id=ans2></span></p>
+                <p id="page" class="bottom">2. Correct Answer: Venus</p> 
+                <p id="page">3. Your Answer: <span id=ans3></span></p>
+                <p id="page" class="bottom">3. Correct Answer: 92,955,807 miles</p> 
+                <p id="page">4. Your Answer: <span id=ans4></span></p>
+                <p id="page" class="bottom">4. Correct Answer: ≈ 4.5 billion years old</p> 
+                <p id="page">5. Your Answer: <span id=ans5></span></p>
+                <p id="page" class="bottom">5. Correct Answer: </p> 
+            </div>
+        
         </div>
     </div>
 </body>
