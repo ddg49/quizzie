@@ -102,8 +102,8 @@ if (percent <= 50) {
 let points = 0;
 function scienceSubmit() {
     
-    if (document.getElementById("hydrogen").checked === false && document.getElementById("helium").checked === false && document.getElementById("hydrochloride").checked === false && document.getElementById("hydroxide").checked === false || document.getElementById("venus").checked === false && document.getElementById("saturn").checked === false && document.getElementById("mars").checked === false && document.getElementById("mercury").checked === false || document.getElementById("ninenine").checked === false && document.getElementById("threetho").checked === false && document.getElementById("ninetwo").checked === false && document.getElementById("hundred").checked === false ) {
-        alert("You must answer every question in order to submit!");
+    if (document.getElementById("hydrogen").checked === false && document.getElementById("helium").checked === false && document.getElementById("hydrochloride").checked === false && document.getElementById("hydroxide").checked === false || document.getElementById("venus").checked === false && document.getElementById("saturn").checked === false && document.getElementById("mars").checked === false && document.getElementById("mercury").checked === false || document.getElementById("ninenine").checked === false && document.getElementById("threetho").checked === false && document.getElementById("ninetwo").checked === false && document.getElementById("hundred").checked === false || document.getElementById("justfourmil").checked === false && document.getElementById("fourfive").checked === false && document.getElementById("justfour").checked === false && document.getElementById("fourfivemil").checked === false || document.getElementById("above").checked === false && document.getElementById("below").checked === false) {
+        alert("Try and answer every question before you submit!");
     } else {
         //CORRECT ANSWERS
         //Question 1

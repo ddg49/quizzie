@@ -63,6 +63,7 @@ li {
     font-size: 30px;
     font-family: 'RocknRoll One', sans-serif;
     margin: 20px;
+    transition: 125ms;
 }
 
 li:hover {
