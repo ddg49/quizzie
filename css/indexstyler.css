@@ -96,13 +96,7 @@ li:nth-child(5) {
     background-image: linear-gradient(319deg, #ffbc42 0%, #28965a 37%, #ee6352 100%);
 }
 
-li:nth-child(6) {
-    background-image: url(/quizimages/jokesimage.jpg);
-    background-size: 370px;
-    background-position-x: -64px;
-}
-
-#watermark {
-    margin-top: 9px;
+#instructions {
     text-align: center;
+    color: black;
 }

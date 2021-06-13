@@ -24,17 +24,17 @@
     </div>
     <div class="container-fluid">
         <div class="row main">
+            <p id="instructions">Please choose a topic</p>
             <ul>
                 <li onclick="openPage('./quizzes/geo.html')">Geography</li>
                 <li onclick="openPage('./quizzes/science.html')">Science</li>
                 <li onclick="openPage('./quizzes/movie.html')">Movies</li>
                 <li onclick="openPage('./quizzes/history.html')">History</li>
-                <li>Misc.</li>
-                <li>Jokes</li>
+                <li onclick="openPage('./quizzes/misc.html')">Misc.</li>
             </ul>
         </div>
     </div>
-    <p id="watermark">Created by Daniel Gavin</p>
+    
 </body>
 <script>
     function openPage(x) {
