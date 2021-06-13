@@ -101,3 +101,8 @@ li:nth-child(6) {
     background-size: 370px;
     background-position-x: -64px;
 }
+
+#watermark {
+    margin-top: 9px;
+    text-align: center;
+}

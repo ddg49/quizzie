@@ -90,19 +90,33 @@ if (percent <= 25) {
     $("#q-4c").html("<input type='radio' class='btn-check' name='rob' id='leo' autocomplete='off'><label class='btn btn-secondary' for='leo'>Leonardo da Vinci</label>")
 }
 
-if (percent <= 50) {
-    $("#q-1d").html("<input type='radio' class='btn-check' name='pill' id='blue' autocomplete='off'><label class='btn btn-secondary' for='blue'>Blue</label>")
-    $("#q-2d").html("<input type='radio' class='btn-check' name='pill' id='red' autocomplete='off'><label class='btn btn-secondary' for='red'>Red</label>")
-} else if (percent > 50 && percent <= 100) {
-    $("#q-1d").html("<input type='radio' class='btn-check' name='pill' id='red' autocomplete='off'><label class='btn btn-secondary' for='red'>Red</label>")
-    $("#q-2d").html("<input type='radio' class='btn-check' name='pill' id='blue' autocomplete='off'><label class='btn btn-secondary' for='blue'>Blue</label>")
+if (percent <= 25) {
+    $("#q-1d").html("<input type='radio' class='btn-check' name='moon' id='nine' autocomplete='off'><label class='btn btn-secondary' for='nine'>1969</label>")
+    $("#q-2d").html("<input type='radio' class='btn-check' name='moon' id='seven' autocomplete='off'><label class='btn btn-secondary' for='seven'>1971</label>")
+    $("#q-3d").html("<input type='radio' class='btn-check' name='moon' id='six' autocomplete='off'><label class='btn btn-secondary' for='six'>1964</label>")
+    $("#q-4d").html("<input type='radio' class='btn-check' name='moon' id='five' autocomplete='off'><label class='btn btn-secondary' for='five'>1957</label>")
+} else if (percent > 25 && percent <= 50) {
+    $("#q-1d").html("<input type='radio' class='btn-check' name='moon' id='five' autocomplete='off'><label class='btn btn-secondary' for='five'>1957</label>")
+    $("#q-2d").html("<input type='radio' class='btn-check' name='moon' id='nine' autocomplete='off'><label class='btn btn-secondary' for='nine'>1969</label>")
+    $("#q-3d").html("<input type='radio' class='btn-check' name='moon' id='seven' autocomplete='off'><label class='btn btn-secondary' for='seven'>1971</label>")
+    $("#q-4d").html("<input type='radio' class='btn-check' name='moon' id='six' autocomplete='off'><label class='btn btn-secondary' for='six'>1964</label>")
+} else if (percent > 50 && percent <= 75) {
+    $("#q-1d").html("<input type='radio' class='btn-check' name='moon' id='six' autocomplete='off'><label class='btn btn-secondary' for='six'>1964</label>")
+    $("#q-2d").html("<input type='radio' class='btn-check' name='moon' id='five' autocomplete='off'><label class='btn btn-secondary' for='five'>1957</label>")
+    $("#q-3d").html("<input type='radio' class='btn-check' name='moon' id='nine' autocomplete='off'><label class='btn btn-secondary' for='nine'>1969</label>")
+    $("#q-4d").html("<input type='radio' class='btn-check' name='moon' id='seven' autocomplete='off'><label class='btn btn-secondary' for='seven'>1971</label>")
+} else if (percent > 75 && percent <= 100) {
+    $("#q-1d").html("<input type='radio' class='btn-check' name='moon' id='seven' autocomplete='off'><label class='btn btn-secondary' for='seven'>1971</label>")
+    $("#q-2d").html("<input type='radio' class='btn-check' name='moon' id='six' autocomplete='off'><label class='btn btn-secondary' for='six'>1964</label>")
+    $("#q-3d").html("<input type='radio' class='btn-check' name='moon' id='five' autocomplete='off'><label class='btn btn-secondary' for='five'>1957</label>")
+    $("#q-4d").html("<input type='radio' class='btn-check' name='moon' id='nine' autocomplete='off'><label class='btn btn-secondary' for='nine'>1969</label>")
 }
 
 
 let points = 0;
 function scienceSubmit() {
     
-    if (document.getElementById("leif").checked === false && document.getElementById("marco").checked === false && document.getElementById("george").checked === false && document.getElementById("chris").checked === false || document.getElementById("paul").checked === false && document.getElementById("ben").checked === false && document.getElementById("tom").checked === false && document.getElementById("wash").checked === false || document.getElementById("ford").checked === false && document.getElementById("rapp").checked === false && document.getElementById("benz").checked === false && document.getElementById("tesla").checked === false || document.getElementById("van").checked === false && document.getElementById("rap").checked === false && document.getElementById("mic").checked === false && document.getElementById("leo").checked === false || document.getElementById("red").checked === false && document.getElementById("blue").checked === false) {
+    if (document.getElementById("leif").checked === false && document.getElementById("marco").checked === false && document.getElementById("george").checked === false && document.getElementById("chris").checked === false || document.getElementById("paul").checked === false && document.getElementById("ben").checked === false && document.getElementById("tom").checked === false && document.getElementById("wash").checked === false || document.getElementById("ford").checked === false && document.getElementById("rapp").checked === false && document.getElementById("benz").checked === false && document.getElementById("tesla").checked === false || document.getElementById("van").checked === false && document.getElementById("rap").checked === false && document.getElementById("mic").checked === false && document.getElementById("leo").checked === false || document.getElementById("seven").checked === false && document.getElementById("six").checked === false && document.getElementById("five").checked === false && document.getElementById("nine").checked === false) {
         alert("Try and answer every question before you submit!");
     } else {
         //CORRECT ANSWERS
@@ -131,9 +145,9 @@ function scienceSubmit() {
             $("#ans4").css("color", "lightgreen")
         }
         //Question 5
-        if(document.getElementById("red").checked === true) {
+        if(document.getElementById("nine").checked === true) {
             points++;
-            $("#ans5").html("Red")
+            $("#ans5").html("1969")
             $("#ans5").css("color", "lightgreen")
         }
 
@@ -183,10 +197,16 @@ function scienceSubmit() {
             $("#ans4").css("color", "red")
         }
         //Question 5
-        if (document.getElementById("blue").checked === true) {
-            $("#ans5").html("blue")
+        if (document.getElementById("seven").checked === true) {
+            $("#ans5").html("1971")
             $("#ans5").css("color", "red")
-        } 
+        } else if (document.getElementById("six").checked === true) {
+            $("#ans5").html("1964")
+            $("#ans5").css("color", "red")
+        } else if (document.getElementById("five").checked === true) {
+            $("#ans5").html("1957")
+            $("#ans5").css("color", "red")
+        }
 
         document.getElementById("points").innerHTML = points;
         document.getElementById("ratio").innerHTML = ((points / 5) * 100).toFixed(1) + " %";
